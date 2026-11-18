@@ -1,0 +1,29 @@
+.video-card {
+  border-radius: 10px;
+  overflow: hidden;
+  opacity: 0.8;
+}
+
+.card-video {
+  width: 100%;
+  height: 370px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 8px !important;
+}
+
+.card-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 0.75rem;
+  color: #555;
+}
+h2.h1{
+    text-align: center;
+    margin: 38px 0px;
+}

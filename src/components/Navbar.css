@@ -1,0 +1,57 @@
+.perfume-navbar {
+  backdrop-filter: blur(7px);
+  background: rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+ 
+}
+nav.navbar{
+   padding: 14px;
+   position: sticky;
+}
+
+a.nav-class {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  color: #000000;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.perfume-links .nav-link {
+  font-family: "Playfair Display", serif;
+  font-size: 23px;
+  color: #000000 !important;
+  transition: 0.3s;
+}
+
+.perfume-links .nav-link:hover {
+  color: #d8b98f !important;
+}
+
+.perfume-icons .nav-link {
+  font-family: "Playfair Display", serif;
+  font-size: 1.1rem;
+  color: #000000 !important;
+}
+
+.cart-count {
+  position: absolute;
+  top: -6px;
+  right: -8px;
+  background: #fff;
+  color: #000;
+  font-size: 0.7rem;
+  padding: 2px 5px;
+  border-radius: 50%;
+  font-weight: 700;
+}
+.social-icons a {
+  transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #d63384;
+}
+.fixed-top{
+  position: sticky;
+}

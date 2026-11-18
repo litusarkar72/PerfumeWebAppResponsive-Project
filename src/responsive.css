@@ -1,0 +1,35 @@
+/* Global responsive layout overrides */
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{min-width:320px;overflow-x:hidden}img,video{max-width:100%}section{scroll-margin-top:90px}
+/* Navigation */
+.perfume-navbar{position:sticky!important;top:0;z-index:1030;width:100%;padding:10px 0;background:rgba(255,255,255,.95);backdrop-filter:blur(12px)}
+.perfume-navbar>.container-fluid{padding-left:clamp(14px,4vw,56px)!important;padding-right:clamp(14px,4vw,56px)!important}
+.perfume-brand img{display:block;width:clamp(110px,13vw,160px);max-height:54px;object-fit:contain}
+.perfume-links{align-items:center;gap:clamp(8px,2vw,28px)!important}.perfume-links .nav-link{font-size:clamp(16px,1.4vw,21px);white-space:nowrap}
+.perfume-navbar .social-icons{align-items:center;flex-shrink:0}
+/* Hero carousel */
+.hero-img{display:block;width:100%;height:clamp(380px,72vh,760px);object-fit:cover;object-position:center;filter:brightness(.72)}
+.hero-carousel .carousel-caption{left:8%;right:8%;bottom:50%;transform:translateY(50%);padding:0;text-align:center;max-width:850px;margin:0 auto}
+.hero-carousel .carousel-caption h1{font-size:clamp(2rem,5vw,4.5rem);line-height:1.12;font-weight:750;text-wrap:balance}.hero-carousel .carousel-caption p{font-size:clamp(1rem,1.8vw,1.35rem)}
+.hero-btn{padding:12px clamp(22px,4vw,40px);border:0;border-radius:30px;font-weight:700}
+/* Product listing and cards */
+.products-wrapper{width:min(100%,1440px);margin:0 auto;padding:clamp(38px,6vw,76px) clamp(14px,5vw,72px)}
+.product-title{font-size:clamp(1.8rem,4vw,2.7rem);line-height:1.2}
+.products-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));justify-items:center;align-items:stretch;gap:clamp(16px,2.5vw,34px)}
+.product-card{width:100%;min-width:0;max-width:310px;height:100%;display:flex;flex-direction:column}.product-card img{height:clamp(180px,23vw,250px);object-fit:cover}
+.product-card h3{font-size:clamp(1rem,1.5vw,1.2rem)}.product-card p{overflow-wrap:anywhere}
+.product-card .btn{gap:8px!important;margin-top:auto;padding-top:10px}.product-card .btn button,.product-card .btn a{flex:1 1 0!important;min-width:0;font-size:clamp(12px,1vw,14px)}
+/* About / contact */
+.about-section{margin-top:clamp(24px,5vw,70px);margin-bottom:24px}.about-section>.row,.contact-section .row{row-gap:28px}
+.about-title{font-size:clamp(2rem,4vw,2.8rem)}.about-para{font-size:clamp(1rem,1.5vw,1.12rem);max-width:520px}.about-img{display:block;width:min(100%,500px);max-height:480px;margin:auto;object-fit:cover}
+.contact-img{display:block;width:min(100%,560px);max-height:440px;margin:auto;object-fit:cover}.contact-section h2.fw-bold{font-size:clamp(2rem,4vw,2.7rem)}.contact-section .col-lg-8{width:100%;max-width:560px}
+/* Video gallery */
+.card-video{display:block;width:100%;height:clamp(190px,27vw,370px);object-fit:cover}.video-card{height:100%;overflow:hidden}h2.h1{font-size:clamp(1.8rem,4vw,2.5rem)}
+/* Footer */
+.footer-container{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:start;gap:30px;padding:20px clamp(16px,5vw,70px)}
+.footer-brand h2{font-size:clamp(1.5rem,3vw,2rem)}.footer-bottom{padding-left:16px;padding-right:16px}
+@media(max-width:1100px){.products-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:991.98px){.perfume-navbar .navbar-collapse{padding:12px 0 8px}.perfume-links{align-items:stretch;gap:2px!important;margin:8px 0 12px!important}.perfume-links .nav-link{padding:9px 4px;font-size:18px}.perfume-navbar .social-icons{justify-content:flex-start;padding:8px 4px}}
+@media(max-width:760px){.products-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.footer-container{grid-template-columns:1fr 1fr;gap:24px 16px}.footer-brand{grid-column:1/-1}}
+@media(max-width:575px){body{background-attachment:scroll}.hero-img{height:430px}.hero-carousel .carousel-caption{left:12%;right:12%}.hero-carousel .carousel-caption h1{font-size:clamp(1.75rem,8vw,2.5rem)}.hero-carousel .carousel-caption p{font-size:.95rem}.card-video{height:230px}.container.my-4 .row{--bs-gutter-x:12px;--bs-gutter-y:14px}}
+@media(max-width:460px){.products-grid{grid-template-columns:1fr}.product-card{max-width:360px}.product-card .btn{flex-direction:column!important}.product-card .btn button,.product-card .btn a{width:100%!important}}
+@media(max-width:420px){.footer-container{grid-template-columns:1fr}.footer-brand{grid-column:auto}}

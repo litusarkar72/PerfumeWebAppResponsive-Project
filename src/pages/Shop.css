@@ -1,0 +1,17 @@
+.products-wrapper {
+  padding: 70px 80px;
+  text-align: center;
+}
+
+.product-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.products-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 91px;
+}
